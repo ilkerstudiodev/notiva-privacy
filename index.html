@@ -5,188 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notiva Gizlilik Politikası</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #222;
-      background: #fff;
-    }
-    h1, h2 {
-      color: #111;
-    }
-    .updated {
-      color: #666;
-    }
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto;
+      padding: 0 20px; line-height: 1.7; color: #222; background: #fff; }
+    h1, h2 { color: #111; }
+    .updated { color: #666; }
   </style>
 </head>
 <body>
-
 <h1>Notiva Gizlilik Politikası</h1>
+<p class="updated"><strong>Son güncelleme:</strong> 14 Kasım 2026</p>
 
-<p class="updated"><strong>Son güncelleme:</strong> 7 Ekim 2026</p>
-
-<p>
-Bu Gizlilik Politikası, ilkerStudioDev tarafından sunulan Notiva Android
-uygulamasının kullanıcı verilerini nasıl işlediğini açıklamaktadır.
-</p>
+<p>Bu Gizlilik Politikası, ilkerStudioDev tarafından sunulan Notiva Android
+uygulamasının kullanıcı verilerini nasıl işlediğini açıklamaktadır.</p>
 
 <h2>1. Genel Bakış</h2>
-
-<p>
-Notiva, notlarınızı, kontrol listelerinizi, klasörlerinizi, etiketlerinizi,
-hatırlatıcılarınızı ve uygulama tercihlerinizi yönetmenizi sağlayan bir
-Android uygulamasıdır.
-</p>
-
-<p>
-Mevcut Google Play sürümünde Notiva'nın temel işlevleri yerel olarak
-cihazınızda çalışır. Notlarınız ve uygulama içeriğiniz ilkerStudioDev
-sunucularına gönderilmez.
-</p>
+<p>Notiva; notları, kontrol listelerini, klasörleri, etiketleri,
+hatırlatıcıları ve uygulama tercihlerini yönetmeye yarayan bir Android
+uygulamasıdır. Mevcut Google Play sürümünün temel işlevleri cihazda yerel
+olarak çalışır. Notlar ve uygulama içeriği ilkerStudioDev sunucularına
+gönderilmez.</p>
+<p>Bu sürüm çevrimiçi hesap oluşturma, bulut senkronizasyonu, reklam,
+analitik veya uygulama içi satın alma sunmaz. Önceki sürümlerden cihazda kalan
+bir yerel hesaba giriş yapılırsa kullanıcı adı ve parola yalnızca cihazda
+doğrulanır; parola açık metin olarak saklanmaz.</p>
 
 <h2>2. Cihazda İşlenen Veriler</h2>
-
-<p>Notiva, işlevlerini sağlayabilmek amacıyla cihazınızda aşağıdaki bilgileri işleyebilir:</p>
-
+<p>Notiva, işlevlerini sağlayabilmek için aşağıdaki verileri cihazda yerel
+olarak işleyebilir:</p>
 <ul>
-  <li>Not başlıkları ve içerikleri</li>
-  <li>Kontrol listeleri</li>
-  <li>Kategoriler, klasörler ve etiketler</li>
+  <li>Not başlıkları, içerikleri ve kaydedilmemiş editör taslakları</li>
+  <li>Kontrol listeleri, klasörler, kategoriler ve etiketler</li>
   <li>Not renkleri, sabitleme, arşivleme ve çöp kutusu bilgileri</li>
   <li>Oluşturulma ve güncellenme tarihleri</li>
   <li>Hatırlatıcı tarihleri, tekrar seçenekleri ve tamamlanma durumları</li>
   <li>Tema, dil, görünüm ve sıralama gibi uygulama tercihleri</li>
   <li>Gizli Kasa içeriği ve kilit tercihleri</li>
-  <li>Kaydedilmemiş editör taslakları</li>
+  <li>Kullanıcının seçtiği görsel, GIF veya ses ekleri</li>
   <li>Kullanıcı tarafından içe veya dışa aktarılan JSON yedekleri</li>
 </ul>
 
-<p>
-Bu bilgiler uygulamanın çalışması için cihazınızda yerel olarak işlenir.
-</p>
-
 <h2>3. Gizli Kasa ve Güvenlik</h2>
-
-<p>
-Gizli Kasa içerisinde saklanan notların ilgili içerik alanları cihaz üzerinde
-şifrelenmiş olarak saklanır. Şifreleme anahtarı Android Keystore kullanılarak
-korunur.
-</p>
-
-<p>
-Notiva biyometrik doğrulama için Android'in sistem tarafından sağlanan
-biyometrik doğrulama mekanizmasını kullanabilir. Uygulama parmak izi veya yüz
-şablonlarınızı almaz, görüntülemez veya saklamaz. Uygulama yalnızca sistem
-tarafından sağlanan doğrulama sonucunu kullanır.
-</p>
+<p>Gizli Kasa notlarının ilgili içerik alanları cihazda AES-GCM ile
+şifrelenir. Şifreleme anahtarı Android Keystore tarafından korunur. Yayıncı
+PIN veya parolayı bilmez ve bir kurtarma arka kapısı sunmaz. Uygulamanın
+kaldırılması, cihazın sıfırlanması veya Keystore anahtarının kaybedilmesi
+kasa içeriğinin kurtarılamamasına neden olabilir.</p>
+<p>Biyometrik kilit seçilirse doğrulama Android'in sistem biyometri
+arayüzünde yapılır. Notiva parmak izi, yüz görüntüsü veya biyometrik şablon
+almaz ve saklamaz; yalnızca sistemin doğrulama sonucunu işler.</p>
 
 <h2>4. Hatırlatıcılar ve Bildirimler</h2>
+<p>Hatırlatıcılar cihazda yerel olarak planlanır. Desteklenen Android
+sürümlerinde bildirim göstermek için sistem bildirim izni istenebilir. Normal
+not bildirimleri not başlığı veya içeriğini gösterebilir. Gizli notlarda ise
+not içeriğini koruyan genel bir bildirim metni kullanılır.</p>
 
-<p>
-Notiva, kullanıcı tarafından oluşturulan hatırlatıcıları cihaz üzerinde yerel
-olarak planlayabilir ve bildirim gösterebilir. Desteklenen Android
-sürümlerinde bildirim göstermek için sistem bildirim izni istenebilir.
-</p>
+<h2>5. Dosya, Medya ve Paylaşım</h2>
+<p>Notiva genel fotoğraf, depolama, kamera veya mikrofon çalışma zamanı izni
+istemez. Kullanıcı isterse Android Photo Picker ile seçtiği görsel veya GIF'i
+ya da sistemin ses kaydedici/seçici uygulamasından dönen ses dosyasını bir
+nota ekleyebilir. Notiva yalnızca kullanıcının sistem arayüzünde açıkça
+seçtiği dosyayı uygulamanın özel alanına kopyalar. Ekler nottan kaldırılabilir
+veya notla birlikte silinebilir.</p>
+<p>Kullanıcı Android paylaşım menüsüyle Notiva'ya metin gönderirse bu metin
+yalnızca seçilen not oluşturma akışında işlenir. Bir not Android paylaşım
+menüsüyle dışarı gönderildiğinde seçilen içerik, kullanıcının seçtiği üçüncü
+taraf uygulamaya aktarılır.</p>
 
-<p>
-Normal notlara ait hatırlatıcı bildirimleri not başlığı veya içeriğini
-gösterebilir. Gizli notlara ait bildirimlerde ise not içeriğinin gizliliğini
-korumak amacıyla genel bir bildirim metni kullanılır.
-</p>
+<h2>6. Yedekleme ve Cihaz Aktarımı</h2>
+<p>Bu yerel sürüm Notiva uygulama verilerinin Android bulut yedeğine ve
+cihazdan cihaza aktarıma dahil edilmesini kapatır. Release yapılandırması
+Android 11 ve altı ile Android 12 ve üzeri için tüm uygulama veri alanlarını
+hem bulut yedeğinden hem cihaz aktarımından hariç tutar. Bu karar, cihaza
+bağlı Gizli Kasa ve yerel hesap güvenliğinin farklı bir cihaz bağlamında
+hatalı biçimde geri yüklenmesini önler.</p>
+<p>Kullanıcının uygulama içinde açıkça başlattığı genel not yedeğini dışa
+aktarma işlemi farklıdır: dosyanın kaydedileceği konumu kullanıcı Android
+sistem seçicisiyle belirler. Gizli Kasa bu genel yedeğe dahil edilmez.</p>
 
-<h2>5. Dosya Erişimi, Yedekleme ve Paylaşım</h2>
+<h2>7. Analitik, Reklam ve Çevrimiçi Hizmetler</h2>
+<p>Mevcut Google Play sürümünde Notiva analitik hizmeti kullanmaz, üçüncü
+taraf reklam göstermez, bulut senkronizasyonu çalıştırmaz ve uygulama içi
+satın alma sunmaz. Notlar ve uygulama içeriği yayıncı tarafından işletilen
+bir bulut hizmetine yüklenmez.</p>
+<p>Uygulama paketinde gelecekteki çevrimiçi bildirim geliştirmesinden kalan
+bazı Firebase kütüphane kodları bulunabilir. Bu release yapılandırması
+Firebase başlangıç bileşenlerini ve ağ izinlerini içermez; Firebase veya FCM
+akışını başlatmaz. Appwrite, Play Billing, Google Mobile Ads ve UMP kodu da
+release artefaktı incelemesinde bulunmamıştır.</p>
 
-<p>
-Notiva kamera, fotoğraf veya genel depolama erişim izni istemez. Yedekleme ve
-geri yükleme işlemlerinde yalnızca kullanıcının Android sistem dosya seçicisi
-aracılığıyla seçtiği dosyalara erişilir.
-</p>
+<h2>8. Saklama ve Silme</h2>
+<p>Yerel veriler kullanıcı silene, uygulama verilerini temizleyene veya
+uygulamayı kaldırana kadar cihazda kalır. Notlar uygulama içinden çöp
+kutusuna taşınabilir ve kalıcı olarak silinebilir. Tüm yerel uygulama verileri
+Android'in uygulama bilgisi ekranından temizlenebilir.</p>
+<p>Kullanıcının dışa aktardığı JSON yedek dosyaları ayrıca kullanıcı
+tarafından silinmelidir. Bu sürümde yayıncı sunucusunda kullanıcı hesabı veya
+not içeriği bulunmadığından ayrıca sunucu hesabı silme işlemi yoktur.</p>
 
-<p>
-Kullanıcı, gizli olmayan uygulama verilerini JSON yedek dosyası olarak dışa
-aktarabilir ve desteklenen JSON yedeklerini tekrar içe aktarabilir.
-Kullanıcının dışa aktardığı dosyaların yönetimi ve silinmesi kullanıcının
-sorumluluğundadır.
-</p>
-
-<p>
-Bir not kullanıcı tarafından Android paylaşım menüsü aracılığıyla
-paylaşıldığında, paylaşılmak üzere seçilen içerik kullanıcının seçtiği üçüncü
-taraf uygulamaya aktarılır.
-</p>
-
-<h2>6. Android Sistem Yedekleri</h2>
-
-<p>
-Cihazınızın ve Google hesabınızın yedekleme ayarlarına bağlı olarak bazı
-uygulama verileri Android'in sistem yedekleme veya cihaz aktarım mekanizmaları
-tarafından yedeklenebilir. Bu işlemler Android/Google sistem ayarları
-tarafından yönetilir.
-</p>
-
-<h2>7. Analitik ve Reklam</h2>
-
-<p>
-Mevcut Google Play sürümünde Notiva kullanıcı davranışlarını takip etmek için
-analitik hizmeti kullanmaz ve üçüncü taraf reklam göstermez.
-</p>
-
-<h2>8. Bulut Senkronizasyonu</h2>
-
-<p>
-Mevcut Google Play sürümünde Notiva'nın bulut senkronizasyon özellikleri
-etkin değildir. Notlar ve uygulama içeriği ilkerStudioDev tarafından
-işletilen bir bulut hizmetine yüklenmez.
-</p>
-
-<h2>9. Verilerin Silinmesi</h2>
-
-<p>
-Kullanıcılar notlarını uygulama içerisinden silebilir ve desteklenen
-işlemlerde çöp kutusundaki verileri kalıcı olarak kaldırabilir.
-</p>
-
-<p>
-Cihazda Notiva tarafından saklanan yerel uygulama verileri, Android'in
-uygulama ayarlarından uygulama verilerinin temizlenmesi veya uygulamanın
-kaldırılması yoluyla cihazdan kaldırılabilir.
-</p>
-
-<p>
-Kullanıcının daha önce dışa aktardığı JSON yedek dosyalarının ayrıca kullanıcı
-tarafından silinmesi gerekir. Android/Google sistem yedekleri ise ilgili
-cihaz ve Google hesabı yedekleme ayarları üzerinden yönetilir.
-</p>
+<h2>9. Üçüncü Taraf Sistem Sağlayıcıları</h2>
+<p>Yayıncı bu sürüm üzerinden kişisel veri satmaz veya reklam amacıyla
+paylaşmaz. Kullanıcının dosya, görsel veya ses seçmek ya da genel not
+yedeğini dışa aktarmak için bilerek seçtiği Android sistem sağlayıcıları
+kendi koşulları ve gizlilik politikaları kapsamında çalışabilir.</p>
 
 <h2>10. Çocukların Gizliliği</h2>
+<p>Notiva genel amaçlı bir üretkenlik uygulamasıdır. Hedef kitlesi 13 yaş ve
+üzeri genel kullanıcılardır; çocuklara özel değildir ve 13 yaşın altındaki
+çocuklardan bilerek kişisel bilgi toplamaz.</p>
 
-<p>
-Notiva çocuklara özel olarak tasarlanmış bir uygulama değildir. Uygulama
-13 yaşın altındaki çocukları özellikle hedeflememektedir.
-</p>
-
-<h2>11. Gizlilik Politikasındaki Değişiklikler</h2>
-
-<p>
-Notiva'nın özellikleri veya veri işleme uygulamaları değiştiğinde bu Gizlilik
-Politikası güncellenebilir. Önemli değişiklikler olduğunda bu sayfadaki
-"Son güncelleme" tarihi de güncellenecektir.
-</p>
+<h2>11. Değişiklikler</h2>
+<p>Uygulamanın özellikleri veya veri işleme davranışı değişirse bu politika
+özellik yayımlanmadan önce güncellenir. Önemli değişikliklerde bu sayfadaki
+son güncelleme tarihi de yenilenir.</p>
 
 <h2>12. İletişim</h2>
-
-<p>
-Bu Gizlilik Politikası veya Notiva'nın gizlilik uygulamaları hakkında
-sorularınız için:
-</p>
-
-<p>
-<strong>Geliştirici:</strong> ilkerStudioDev<br>
-<strong>E-posta:</strong> ilkerstudiodev@gmail.com
-</p>
-
+<p><strong>Geliştirici:</strong> ilkerStudioDev<br>
+<strong>E-posta:</strong>
+<a href="mailto:ilkerstudiodev@gmail.com">ilkerstudiodev@gmail.com</a></p>
 </body>
 </html>
